@@ -1,7 +1,7 @@
 {
     "name": "nycooookie/social-share",
-    "description": "Boilerplate package for creating other packages.",
-    "keywords": ["template", "composer", "package"],
+    "description": "Generate share links for various social services",
+    "keywords": ["social", "share", "generate"],
     "license": "MIT",
     "authors": [
         {
