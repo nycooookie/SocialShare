@@ -1,15 +1,14 @@
-Composer Library Template
+Social Share
 =========================
 
-If you are trying to create a new PHP Composer library, whether it will be going to submitted to packagist.org or just in your Github account, this template of files will surely help you make the process a lot easier and faster.
+This "library" helps you generate share links for various (well at the moment rather limited) social services.
 
-Features
---------
-
-* PSR-4 autoloading compliant structure
-* Unit-Testing with PHPUnit
-* Comprehensive Guides and tutorial
-* Easy to use to any framework or even a plain php file
-
-
-I encourage that you put more information on this readme file instead of leaving it as is. See [How to make a README file](http://www.darwinbiler.com/designing-and-making-the-readme-file-for-your-github-repository/) for more info.
+```
+$s = new SocialShare('Google', 'https://google.com', 'This is Google');
+$s->twitter();  // "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgoogle.com"
+$s->facebook(); // "https://twitter.com/intent/tweet?text=Google&url=https%3A%2F%2Fgoogle.com"
+$s->xing();     // "https://www.xing.com/spi/shares/new?url=https%3A%2F%2Fgoogle.com"
+$s->linkedin(); // "https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fgoogle.com&summary=This+is+Google"
+$s->mail();     // "mailto:?subject=Google&body=This%20is%20Google%3A%20https%3A%2F%2Fgoogle.com"
+$s->all();      // All of the above in an array
+```
