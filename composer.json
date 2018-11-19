@@ -2,7 +2,7 @@
     "name": "nycooookie/social-share",
     "description": "Boilerplate package for creating other packages.",
     "keywords": ["template", "composer", "package"],
-    "license": "DBAD",
+    "license": "MIT twer",
     "authors": [
         {
             "name": "Elwin Stephan",
